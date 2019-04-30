@@ -1,0 +1,106 @@
+.slider {
+width:450px;/*Die Darstellungsbreite des Sliders*/
+max-width:100%;/*Anpassung an schmalere Geräte*/
+height:300px;/*maximale Höhe*/
+margin:auto;/*seitlicher Abstand des Sliders - hier Ausrichtung in der Mitte*/
+position: absolute;/*Damit das absolute der .sliderbox innerhalb unseres Sliders bleibt*/
+-webkit-animation-name:slide;
+-webkit-animation-duration:20s;
+-webkit-animation-direction:alternate;
+-webkit-animation-play-state: paused;
+animation-name:slide;
+animation-duration: 20s;
+animation-direction: alternate;
+animation-play-state: paused;
+}
+
+.slider:hover {
+  animation-play-state: running;
+}
+.slider h2 {
+margin:0;
+}
+
+.slider ul{
+margin:0;padding:0;
+}
+
+.sliderbox {
+border: 5px solid black;
+border-radius: 8px;
+width:100%;/*Nur ein Sliderfeld erscheint, obwohl die Liste 500% breit ist*/
+overflow:hidden;/*Alles, was zu groß ist wird versteckt*/
+position:absolute;/*Die Box wird absolut im Slider positioniert*/
+}
+
+
+.slider li {
+float:left;/*Die Sliderfelder werden nebeneinander angeordnet*/
+width:20%;/*Um die Felder gleichmäßig zu verteilen, unabhängig vom Inhalt*/
+height:300px;/*muss die Gesamthöhe des Sliders sein*/
+list-style-type: none;/*Die Listenpunkte • werden ausgeblendet*/
+position:relative;/*Positionierung der Bildbeschreibungen im Inhalt*/
+}
+
+.slider img {
+width:100%;/*Die Bilder sollen den Slider ausfüllen*/
+height:auto;/*Die Höhe der Bilder soll sich proportional verhalten*/
+max-width: 100%;/*Einpassung zu breiter Bilder*/
+
+}
+
+.slider li .slider-caption {
+position:absolute;/*Die Beschreibung soll auf den Bildern platziert werden*/
+bottom:0;/*Der Abstand des Textes zur Unterkante des Bildes/Sliders*/
+left:0;/*Der Abstand des Textes zur linken Kante des Bildes/Sliders*/
+background-color:rgba(255, 255, 255, 0.8);/*weiß hinterlegt (optional - für die Lesbarkeit)*/
+padding:2%;/*Innenabstand, damit der Textinhalt nicht am Rand klebt*/
+width:96%;/*100% Gesamtbreite minus je 2% Abstand (padding) rechts und links*/
+}
+
+.slider li .slider-text {
+padding:5%;/*Damit der Textinhalt nicht am Rand klebt*/
+background-color: #f5f5f5;/*Hintergrundfarbe - optional*/
+}
+
+.slider li .slider-text ul { /*Eine Liste im Inhalt*/
+width:100%;/*Überschreiben der 500%*/
+animation:none;/*Hier soll sich nichts bewegen*/
+-webkit-animation: none;/*Browserweiche für Chrome, Safari und Opera*/
+-moz-animation: none;/*Browserweiche für Firefox*/
+padding:0 20px;/*Überschreiben der Angaben für die Sliderliste*/
+}
+
+.slider li .slider-text ul li {
+list-style-type:inherit;/*Überschreiben der Angaben für die Sliderliste*/
+list-style-position:outside;/*Überschreiben der Angaben für die Sliderliste*/
+padding-left: 25px;/*Überschreiben der Angaben für die Sliderliste*/
+float:none;/*Die Listenpunkte sollen nicht nebeneinander sitzen*/
+height: auto;/*Überschreibt die Gesamthöhe des Sliders*/
+}
+
+@keyframes slide { /*Unser Slideffekt - siehe .slider ul*/
+  0% { margin-left:0%; }/*Der erste Inhalt wird angezeigt*/
+ 21% { margin-left:0%; }/*Der erste Inhalt wird angezeigt, kurz vor dem Wechsel*/
+ 23% { margin-left:-100%; }/*Der zweite Inhalt wird angezeigt, die Liste wird 100% nach links geschoben*/
+ 43% { margin-left:-100%; }/*Der zweite Inhalt wird angezeigt, kurz vor dem Wechsel*/
+ 45% { margin-left:-200%; }/* usw. */
+ 65% { margin-left:-200%; }
+ 67% { margin-left:-300%; }
+ 87% { margin-left:-300%; }
+ 89% { margin-left:-400%; }/*Der letzte Inhalt wird angezeigt, die Liste wurde 400% nach links geschoben*/
+100% { margin-left:-400%; }/*Der letzte Inhalt wird nur halb so lang angezeigt*/
+}
+
+@-webkit-keyframes slide {/*Browserweiche für Chrome, Safari und Opera*/
+  0% { margin-left:0%; }
+ 21% { margin-left:0%; }
+ 23% { margin-left:-100%; }
+ 43% { margin-left:-100%; }
+ 45% { margin-left:-200%; }
+ 65% { margin-left:-200%; }
+ 67% { margin-left:-300%; }
+ 87% { margin-left:-300%; }
+ 89% { margin-left:-400%; }
+100% { margin-left:-400%; }
+}

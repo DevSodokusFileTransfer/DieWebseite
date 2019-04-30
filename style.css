@@ -1,0 +1,418 @@
+.btn {
+  border: 1mm solid #DEFB8E;
+  color: #3F0404;
+  background-color: #DEFB8E;
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: background-color 1s linear, color 2s ease, padding 99ms ease-in-out;
+  -webkit-transition: background-color 1s linear, color 2s ease, padding 99ms ease-in-out;
+  -moz-transition: background-color 1s linear, color 2s ease, padding 99ms ease-in-out;
+  -o-transition: background-color 1s linear, color 2s ease, padding 99ms ease-in-out;
+}
+
+.btn:hover {
+  color: #DEFB8E;
+  background-color: rgba(0,0,0,.100);
+  padding: 8px 21px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 1s linear, color 2s ease, padding 99ms ease-in-out;
+  -webkit-transition: background-color 1s linear, color 2s ease, padding 99ms ease-in-out;
+  -moz-transition: background-color 1s linear, color 2s ease, padding 99ms ease-in-out;
+  -o-transition: background-color 1s linear, color 2s ease, padding 99ms ease-in-out;
+}
+.btn-yes {
+  border: 1px solid Black;
+  color: #3F0404;
+  background-color: lightgreen;
+  padding: 5px 12px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-no {
+  border: 1px solid Black;
+  color: #3F0404;
+  background-color: red;
+  padding: 5px 12px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.out1 {
+  color: dodgerblue;
+	font: Tahoma, Geneva, sans-serif;
+	font-size: 500%;
+
+  text-shadow:
+  -2px -2px 0 yellow,
+  2px -2px 0 yellow,
+  -2px 2px 0 yellow,
+  2px 2px 0 yellow,
+  -2px 0 0 yellow,
+  2px 0 0 yellow,
+  0 2px 0 yellow,
+  0 -2px 0 yellow;
+  transition: color 2s linear, text-shadow 2s linear;
+  -webkit-transition: color 2s linear, text-shadow 2s linear;
+  -moz-transition: color 2s linear, text-shadow 2s linear;
+  -o-transition: color 2s linear, text-shadow 2s linear;
+}
+.out1:hover {
+  color: yellow;
+  cursor: pointer;
+  text-shadow:
+  -2px -2px 0 dodgerblue,
+  2px -2px 0 dodgerblue,
+  -2px 2px 0 dodgerblue,
+  2px 2px 0 dodgerblue,
+  -2px 0 0 dodgerblue,
+  2px 0 0 dodgerblue,
+  0 2px 0 dodgerblue,
+  0 -2px 0 dodgerblue;
+  transition: color 1s linear, text-shadow 1s linear;
+  -webkit-transition: color 1s linear, text-shadow 1s linear;
+  -moz-transition: color 1s linear, text-shadow 1s linear;
+  -o-transition: color 1s linear, text-shadow 1s linear;
+}
+
+.btn1 {
+  border: 3px solid #21610B;
+  color: #3F0404;
+  background-color: #DEFB8E;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.buttonhoch {
+  border: 3px solid black;
+  background-color: #E6E6E2;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.buttonrunter {
+  border: 3px solid black;
+  background-color: #E6E6E2;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  position: fixed;
+    top: 10px;
+    right: 90px;
+}
+
+.diveit {
+  border: 3px solid black;
+  position: fixed;
+    top: 0;
+    right: 0;
+    width: 175px;
+    height: 100%;
+}
+
+.buttonfixed2 {  background-attachment: fixed;
+  background-size: cover;
+  border: 3px solid black;
+  background-color: #E6E6E2;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  position: fixed;
+    bottom: 115px;
+    right: 7px;
+}
+
+.buttonfixed3 {
+  border: 3px solid black;
+  background-color: #E6E6E2;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  position: fixed;
+    bottom: 60px;
+    right: 7px;
+}
+
+.buttonfixed4 {
+  border: 3px solid black;
+  background-color: #E6E6E2;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  position: fixed;
+    bottom: 5px;
+    right: 7px;
+}
+
+body {
+background-image: url("hügel.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+.body {
+background-image: url("elefant.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+.mega {
+	font: Tahoma, Geneva, sans-serif;
+	font-size: 45px;
+    color: white;
+    text-shadow:
+    /* Outline */
+    -2px -2px 0 red,
+    2px -2px 0 red,
+    -2px 2px 0 red,
+    2px 2px 0 red,
+    -2px 0 0 red,
+    2px 0 0 red,
+    0 2px 0 red,
+    0 -2px 0 red; /* Terminate with a semi-colon */
+}
+
+.werbung {
+        border: 3px solid #ffffff;
+	font: Tahoma, Geneva, sans-serif;
+	font-size: 20px;
+    color: white;
+    text-shadow:
+    /* Outline */
+    -2px -2px 0 #000000,
+    2px -2px 0 #000000,
+    -2px 2px 0 #000000,
+    2px 2px 0 #000000,
+    -2px 0 0 #000000,
+    2px 0 0 #000000,
+    0 2px 0 #000000,
+    0 -2px 0 #000000; /* Terminate with a semi-colon */
+}
+
+.out2 {
+	font: Tahoma, Geneva, sans-serif;
+	font-size: 200%;
+    color: white;
+    text-shadow:
+    /* Outline */
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black,
+    -1px 0 0 black,
+    1px 0 0 black,
+    0 1px 0 black,
+    0 -1px 0 black; /* Terminate with a semi-colon */
+}
+
+.div1 {
+  margin: auto;
+   width: 50%;
+   border: 3px solid #0B3B0B;
+   padding: 10px;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #232525;
+  padding-top:70px;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.40); /* Black w/ opacity */
+}
+
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.40); /* Black w/ opacity */
+}
+
+.modal3 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0,0,0,0.40)
+}
+
+.modal-content1 {
+  background-color: aqua;
+  margin: auto;
+  padding: 20px;
+  border: 5px solid black;
+  border-radius: 20px 40px;
+  width: 80%;
+}
+
+.modal-content2 {
+  background-color: aqua;
+  margin: auto;
+  padding: 20px;
+  border: 5px solid black;
+  border-radius: 80px 30px;
+  width: 80%;
+}
+
+.modal-content3 {
+  background-color: orange;
+  margin: auto;
+  padding: 20px;
+  border: 5px solid grey;
+  border-radius: 500px 200px;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.data {
+  background-color: black;
+  font-weight: bold;
+  border: 6px solid rgb(255, 161, 0);
+  border-radius: 10px 40px;
+  width: 30%;
+  height: 30%;
+  color: white;
+  font-size: 18px;
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+#body {
+  background-color: silver;
+}
+
+.box {
+  font-size: 17px;
+  color: white;
+  background-color: black;
+  border: 6px solid rgb(255, 161, 0);
+  border-radius: 10px 40px;
+  width: 1000px;
+  min-height: 300px;
+  font-size: 18px;
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+.Kontakt {
+  color: red;
+  font-weight: bold;
+  font-size: 170%;
+}
+
+#anim {
+  -webkit-animation-name: anim;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: 2;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: paused;
+  animation-name: anim;
+  animation-iteration-count: 2;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-play-state: paused;
+}
+
+@-webkit-keyframes anim {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+@keyframes anim {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+.smiley {
+  font-size: 40px;
+}
+
+.uber {
+	font-family: New Century Schoolbook, TeX Gyre Schola;
+	font-size: 50px;
+    color: #2E9AFE;
+    text-shadow:
+    /* Outline */
+    -2px -1px 0 #0B6121,
+    2px -2px 0 #0B6121,
+    -2px 2px 0 #0B6121,
+    2px 2px 0 #0B6121,
+    -2px 0 0 #0B6121,
+    2px 0 0 #0B6121,
+    0 2px 0 #0B6121,
+    0 -2px 0 #0B6121; /* Terminate with a semi-colon */
+}
+
+.überprojects {
+	font-family: New Century Schoolbook, TeX Gyre Schola;
+	font-size: 50px;
+    color: #2E9AFE;
+    text-shadow:
+    /* Outline */
+    -2px -1px 0 lightgreen,
+    2px -2px 0 lightgreen,
+    -2px 2px 0 lightgreen,
+    2px 2px 0 lightgreen,
+    -2px 0 0 lightgreen,
+    2px 0 0 lightgreen,
+    0 2px 0 lightgreen,
+    0 -2px 0 lightgreen; /* Terminate with a semi-colon */
+}
